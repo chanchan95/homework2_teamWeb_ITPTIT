@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link href="/WEB_CALCULATOR/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <script src="/WEB_CALCULATOR/main.js"></script>
+        <div id="calculator">
+            <div id="screen">
+                <span id="display__result"></span>
+            </div>
+            <div id="buttons">
+                <div id="buttons__row">
+                    <button id="buttons__item" onclick="Clear()" style="width: 145px;"><span>C</span></button>
+                    <button id="buttons__item" onclick="Mod()"><span>%</span></button>
+                    <button id="buttons__item" onclick="Div()"><span>/</span></button>
+                </div>
+                <div id="buttons__row">
+                    <button id="buttons__item" onclick="clickNumber(7)"><span>7</span></button>
+                    <button id="buttons__item" onclick="clickNumber(8)"><span>8</span></button>
+                    <button id="buttons__item" onclick="clickNumber(9)"><span>9</span></button>
+                    <button id="buttons__item" onclick="Mul()"><span>x</span></button>
+                </div>
+                
+                <div id="buttons__row">
+                    <button id="buttons__item" onclick="clickNumber(4)"><span>4</span></button>
+                    <button id="buttons__item" onclick="clickNumber(5)"><span>5</span></button>
+                    <button id="buttons__item" onclick="clickNumber(6)"><span>6</span></button>
+                    <button id="buttons__item" onclick="Sub()"><span>-</span></button>
+                </div>
+                
+                <div id="buttons__row">
+                    <button id="buttons__item" onclick="clickNumber(1)"><span>1</span></button>
+                    <button id="buttons__item" onclick="clickNumber(2)"><span>2</span></button>
+                    <button id="buttons__item" onclick="clickNumber(3)"><span>3</span></button>
+                    <button id="buttons__item" onclick="Add()"><span>+</span></button>
+                </div>
+
+                <div id="buttons__row">
+                    <button id="buttons__item" onclick="clickNumber(0)" style="width: 145px;" ><span>0</span></button>
+                    <button id="buttons__item" onclick="Dot()"><span>.</span></button>
+                    <button id="buttons__item" onclick="Calculate()"><span>=</span></button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
